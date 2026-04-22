@@ -1,0 +1,286 @@
+HTML, BODY
+{
+	background-color: #004678;
+	font-size: 100%;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+BODY
+{
+	margin: 0px;
+	position: relative;
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 62.5%;
+	line-height: 1em;
+	color: #000000;
+}
+
+EM
+{
+	font-style: italic;
+}
+
+P
+{
+	line-height: 1.65em;
+	text-align: justify;
+}
+
+P, LI
+{
+	font-size: 1.4em;
+	line-height: 1.5em;
+}
+
+P:first-of-type:first-line
+{
+	text-transform: uppercase;
+}
+
+#partnerLogos, #partnerLogos IMG
+{
+	width: 217px;
+	margin: 1em auto;
+}
+
+.icons
+{
+	float: right;
+	margin-left: 11px;
+}
+
+HR
+{
+	color: #FC7A1A;
+	margin: 2em auto;
+	width: 80%;
+}
+
+
+/* Begin ADDRESS Styles */
+
+ADDRESS
+{
+	font-size: 1.4em;
+	line-height: 1.4em;
+	margin-bottom: 1em;
+}
+
+ADDRESS STRONG EM
+{
+	color: #F00;
+}
+
+ADDRESS:first-line
+{
+	font-weight: bold;
+}
+
+ADDRESS ~ P:first-of-type:first-line
+{
+	text-transform: none;
+}
+
+/* End ADDRESS Styles */
+
+#wrapper
+{
+	background: none;
+	background-color: #C1C1C1;
+	border: 3px solid #FFFFFF;
+	margin: 11px auto 0px;
+	overflow: auto;
+	position: relative;
+	width: 968px;
+	z-index: 100;
+}
+
+HEADER
+{
+	background-image: url(images/banner.png);
+	border-bottom: 1px dotted #6D6D6D;
+	color: #FFFFFF;
+	display: block;
+	position: relative;
+	width: 968px;
+	height: 281px;
+}
+
+#content
+{
+	overflow: auto;
+	width: 100%;
+}
+
+#unique
+{
+	background-color: #FFFFFF;
+	float: right;
+	padding: 0px 14px 0px 16px;
+	width: 639px;
+}
+
+#unique H1, #unique H2, #unique H3, #unique H4
+{
+	background-repeat: no-repeat;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-style: italic;
+	line-height: 1.2em;
+	margin: .65em 0px;
+	text-shadow: 1px 1px 2px rgba(0,0,0,.6);
+}
+
+#unique H1
+{
+	font-size: 2.5em;
+	padding-top: 3px;
+}
+
+#unique H2
+{
+	font-size: 2.3em;
+	padding-top: 3px;
+}
+
+#unique H3
+{
+	clear: both;
+	font-size: 2.1em;
+	padding-top: 5px;
+}
+
+#unique P + UL, #unique UL + UL
+{
+	float: left;
+	margin-left: 44px;
+	width: auto;
+}
+
+#unique UL + P
+{
+	clear: both;
+}
+
+#unique A:link
+{
+	text-decoration: none;
+}
+
+#unique A:link, A:visited
+{
+	color: #4069B3;
+}
+
+#unique A:hover
+{
+	background-color: #989898;
+}
+
+#blurb
+{
+	 width: 60%;
+	 margin: 0px auto;
+	 text-align: center;
+	 border: 1px solid black;
+	 border-radius: .7em;
+	 -moz-border-radius: .7em;
+	 margin-bottom: 1em;
+	 padding: .6em;
+	 background-color: #FD0000;
+	 font-size: 1.5em;
+	 line-height: 1.8em;
+	 -o-box-shadow: 10px 10px 5px #888;
+	 -icab-box-shadow: 10px 10px 5px #888;
+	 -khtml-box-shadow: 10px 10px 5px #888;
+	 -moz-box-shadow: 10px 10px 5px #888;
+	 -webkit-box-shadow: 10px 10px 5px #888;
+	 backgrXound: -moz-linear-gradient(left, #FD0000, #D19FAA);
+}
+
+#unique #blurb A
+{
+	color: #000000;
+}
+
+
+/* Begin Side Navigation Styles */
+
+NAV
+{
+	background-color: #FFFFFF;
+	color: #FF0000;
+	display: block;
+	float: left;
+	height: 100%;
+	overflow: hidden;
+	padding: 0px;
+}
+
+NAV, NAV UL, NAV > DIV > UL, NAV UL LI
+{
+	width: 297px;
+}
+
+NAV UL
+{
+	border-bottom: 2px solid #D6D6D6;
+    margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+NAV UL LI
+{
+	border-top: 1px dashed #D6D6D6;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5em;
+	list-style-type: none;
+	list-style-position: outside;
+	padding: 0px;
+}
+
+NAV UL LI, NAV UL LI A
+{
+	display: block;
+	width: 100%;
+}
+
+NAV LI A:link,
+NAV LI A:visited
+{
+	color: #0030ff;
+	text-decoration: none;
+}
+
+NAV UL LI A:visited
+{
+	background-color: #EEEEEE;
+}
+
+.current, NAV UL LI:hover
+{
+	background-color: #989898;
+	color: #FFFFFF;
+}
+
+NAV UL LI A:hover
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+NAV UL LI A:visited:hover
+{
+	background-color: #989898;
+	color: #FFFFFF;
+}
+
+UL LI A[href^="http:"]
+{
+	background: url(images/remote.png) right center no-repeat;
+	padding-right: 17px;
+}
+
+/* End Side Navigation Styles */

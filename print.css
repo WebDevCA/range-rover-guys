@@ -1,0 +1,15 @@
+EMBED, NAV, #blurb, .noPrint
+{
+	display: none;
+}
+
+A
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+P
+{
+	text-align: justify;
+}
