@@ -10,9 +10,9 @@ include ('header.php');
 
 <h1>Huntington Beach Range Rover Service</h1>
 
-<p>Welcome to our Range Rover auto repair shop. We have been in business since 1985 in Huntington beach. Over our years of service we have evolved to working on Range Rovers to meet the requests of our customers. Range Rovers are luxury off-road SUVs. While our team of qualified mechanics works on yours we offer a shuttle service for you between our shop and nearby cities such as Irvine, Newport Beach, Seal Beach and Los Alamitos.</p>
+<p>Welcome to Range Rover Guys, an independent Range Rover and Land Rover repair shop serving Huntington Beach since 1985. Range Rovers are luxury off-road SUVs, and over the years we have specialized our work around them to meet the requests of our customers. While our team of qualified mechanics services yours, we offer a shuttle between our shop and nearby cities including Irvine, Newport Beach, Seal Beach, and Los Alamitos.</p>
 
-<p>, where we pride ourselves on providing top-quality service to our valued customers. Our team of highly trained and experienced technicians specialize in repairing and maintaining Range Rover vehicles to ensure they are running at peak performance. We understand the importance of having a reliable and properly functioning vehicle, especially when it comes to a luxury SUV like the Range Rover.</p>
+<p>We pride ourselves on providing top-quality service to our valued customers. Our team of highly trained and experienced technicians specializes in repairing and maintaining Range Rover vehicles to ensure they are running at peak performance. We understand the importance of having a reliable and properly functioning vehicle, especially when it comes to a luxury SUV like the Range Rover.</p>
 
 <p>At our shop, we use only the latest diagnostic tools and equipment to accurately troubleshoot any issues you may be experiencing with your Range Rover. Whether you need routine maintenance, such as oil changes and tire rotations, or major repairs such as engine overhauls and transmission replacements, our team is equipped to handle any job with professionalism and care. We provide transparent pricing, so you can be confident that you're getting the best value for your money.</p>
 
@@ -29,7 +29,7 @@ include ('header.php');
 <h3>Range Rover Fun Facts</h3>
 
 <ul>
-	<li>Land Rovers began in Wales in 1948.</li>
+	<li>Land Rover began in Solihull, England in 1948 (debuting at the Amsterdam Motor Show).</li>
 	<li>The Land Rover was first introduced to America in 1950 and the Range Rover model was introduced in 1967.</li>
 	<li>The three best selling models of Range Rovers are: Land Rover Range Rover Sport, Land Rover Discovery and Land Rover Defender</li>
 </ul>
@@ -42,7 +42,7 @@ include ('header.php');
 
 <p>In 2012, the fourth-generation Range Rover was launched. It saw significant updates to both the exterior and interior. The new model featured an aluminum body, making it much lighter than previous models. It included technologies like an eight-inch touchscreen display and an advanced Terrain Response system, giving drivers the ability to tailor their driving experience to their desired terrain.</p>
 
-<p>Today, Range Rovers have become synonymous with luxury SUVs, and the brand continues to innovate and release new models. If you're in need of Range Rover auto repair, it's essential to visit a qualified shop that can provide the necessary repairs. At our shop, we have the experience and expertise needed to keep your Range Rover running smoothly.</p-->
+<p>Today, Range Rovers have become synonymous with luxury SUVs, and the brand continues to innovate and release new models. If you're in need of Range Rover auto repair, it's essential to visit a qualified shop that can provide the necessary repairs. At our shop, we have the experience and expertise needed to keep your Range Rover running smoothly.</p>
 
 <?php
 
