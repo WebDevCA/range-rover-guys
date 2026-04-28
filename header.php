@@ -28,6 +28,8 @@ $og_url         = ($canonical_path === '/') ? 'https://rangeroverguys.com/' : $c
 
 		<meta property="og:image" content="https://rangeroverguys.com/images/searchRover.jpg" />
 
+		<meta name="robots" content="index, follow, max-image-preview:large" />
+
 		<meta property="og:url" content="<?= htmlspecialchars($og_url, ENT_QUOTES, 'UTF-8') ?>" />
 
 		<meta property="og:type" content="website" />
