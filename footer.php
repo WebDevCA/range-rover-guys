@@ -8,7 +8,7 @@
 						<strong>Address:</strong>
 						<a href="https://www.google.com/maps/search/?api=1&amp;query=7662+Slater+Avenue+Suite+J+Huntington+Beach+CA+92647">7662 Slater Avenue, Suite J<br />Huntington Beach, CA 92647</a><br />
 						<strong>Phone:</strong> <a href="tel:+17144655488">(714) 465-5488</a><br />
-						<strong>Hours:</strong> Monday&ndash;Saturday, 8:00 AM &ndash; 5:00 PM
+						<strong>Hours:</strong> Monday&ndash;Saturday, 7:30 AM &ndash; 5:30 PM
 					</address>
 
 					<div class="map-embed">
