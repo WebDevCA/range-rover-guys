@@ -10,7 +10,7 @@ include ('header.php');
 
 ?>
 
-<h1>Huntington Beach Range Rover Service</h1>
+<h1>Huntington Beach Range Rover Service<br /><br /><a href="tel:+17144655488" border="0">Call now for quality service.</a></h1>
 
 <p>Welcome to Range Rover Guys, an independent Range Rover and Land Rover repair shop serving Huntington Beach since 1985. Range Rovers are luxury off-road SUVs, and over the years we have specialized our work around them to meet the requests of our customers. While our team of qualified mechanics services yours, we offer a shuttle between our shop and nearby cities including Irvine, Newport Beach, Seal Beach, and Los Alamitos.</p>
 
