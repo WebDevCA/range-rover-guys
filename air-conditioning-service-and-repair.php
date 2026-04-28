@@ -4,6 +4,8 @@ $page_title = 'Range Rover Air Conditioning Service and Repair | Expert HVAC Sol
 
 $meta_description = '(714) 465-5488 Keep your Range Rover\'s air conditioning running smoothly with our expert HVAC solutions. Our team of experienced technicians provide comprehensive air conditioning service and repair, ensuring your vehicle stays cool and comfortable even in the hottest weather. From diagnosing issues to fixing leaks and replacing parts, we have the skills and tools necessary to get your air conditioning back up and running efficiently. Contact us today to schedule your service appointment in the Huntington Beach area.';
 
+$canonical_path = '/air-conditioning-service-and-repair.php';
+
 include ('header.php');
 
 ?>

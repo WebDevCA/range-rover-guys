@@ -2,9 +2,9 @@
 
 $page_title = 'Range Rover Repair Huntington Beach - Site Map';
 
-$meta_keywords = '';
+$meta_description = 'Site map for Range Rover Guys, an independent Range Rover repair shop in Huntington Beach.';
 
-$meta_description = '.';
+$canonical_path = '/sitemap.php';
 
 include ('header.php');
 
@@ -16,7 +16,6 @@ include ('header.php');
 						<li><a href="/">Home</a></li>
 						<li><a href="air-conditioning-service-and-repair.php">Air Conditioning Service</a></li>
 						<li><a href="brake-service-and-repair.php">Brake Service</a></li>
-						<li><a href="electrical-diagnosis.php">Electrical Diagnosis</a></li>
 						<li><a href="sitemap.php">Site Map</a></li>
 					</ul>
 
