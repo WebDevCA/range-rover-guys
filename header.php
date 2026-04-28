@@ -69,7 +69,7 @@
 
 		<div id="wrapper">
 
-			<header><img src="images/banner.png" width="968" height="281" fetchpriority="high" alt="Range Rover Guys - Independent Range Rover Repair, Huntington Beach" /></header>
+			<header><a href="tel:+17144655488" border="0"><img src="images/banner.png" width="968" height="281" fetchpriority="high" alt="Range Rover Guys - Independent Range Rover Repair, Huntington Beach" /></a></header>
 
 			<div id="content">
 
