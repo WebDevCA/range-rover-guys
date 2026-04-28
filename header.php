@@ -1,3 +1,9 @@
+<?php
+$canonical_path = $canonical_path ?? '/';
+$canonical_url  = 'https://rangeroverguys.com' . $canonical_path;
+$meta_robots    = $meta_robots ?? 'index, follow';
+$og_url         = ($canonical_path === '/') ? 'https://rangeroverguys.com/' : $canonical_url;
+?>
 <!DOCTYPE html>
 
 <html lang="en-US">
@@ -8,7 +14,7 @@
 
 		<meta name="description" content="<?= htmlspecialchars($meta_description, ENT_QUOTES, 'UTF-8') ?>" />
 
-		<meta name="robots" content="index, follow" />
+		<meta name="robots" content="<?= htmlspecialchars($meta_robots, ENT_QUOTES, 'UTF-8') ?>" />
 
 		<meta charset="utf-8" />
 
@@ -22,7 +28,7 @@
 
 		<meta property="og:image" content="https://rangeroverguys.com/images/og-shop.jpg" />
 
-		<meta property="og:url" content="https://rangeroverguys.com/" />
+		<meta property="og:url" content="<?= htmlspecialchars($og_url, ENT_QUOTES, 'UTF-8') ?>" />
 
 		<meta property="og:type" content="website" />
 
@@ -32,7 +38,7 @@
 
 		<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
-		<link rel="canonical" href="https://rangeroverguys.com/" />
+		<link rel="canonical" href="<?= htmlspecialchars($canonical_url, ENT_QUOTES, 'UTF-8') ?>" />
 
 		<script type="application/ld+json">
 		{
@@ -59,7 +65,7 @@
 		    "closes": "17:00"
 		  }],
 		  "areaServed": ["Huntington Beach","Irvine","Newport Beach","Seal Beach","Los Alamitos"],
-		  "makesOffer": ["Range Rover repair","Range Rover electrical diagnosis","Range Rover air conditioning service","Range Rover brake service","Range Rover maintenance"]
+		  "makesOffer": ["Range Rover repair","Range Rover air conditioning service","Range Rover brake service","Range Rover electrical diagnosis","Range Rover maintenance"]
 		}
 		</script>
 

@@ -4,6 +4,8 @@ $page_title = 'Range Rover Brake Service and Repair - Keep Your SUV Safe and Rel
 
 $meta_description = '(714) 465-5488 Ensure your Range Rover is always safe and reliable with our expert brake service and repair. Our team of certified technicians are equipped with the latest tools and knowledge to diagnose and fix any issues with your brakes. Whether it\'s brake pad replacement, fluid flush, or rotor resurfacing, we\'ve got you covered. Don\'t take chances with your SUV\'s safety, bring it to us for top-notch brake service and repair today. Book your appointment now!';
 
+$canonical_path = '/brake-service-and-repair.php';
+
 include ('header.php');
 
 ?>

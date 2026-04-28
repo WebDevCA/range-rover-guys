@@ -4,6 +4,8 @@ $page_title = 'Range Rover Auto Repair Services | Huntington Beach';
 
 $meta_description = 'Expert Range Rover repair & service in Huntington Beach since 1985. All models, dealer-level diagnostics, shuttle to Irvine, Newport Beach & Seal Beach.';
 
+$canonical_path = '/';
+
 include ('header.php');
 
 ?>

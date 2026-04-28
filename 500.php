@@ -6,6 +6,10 @@ $page_title = 'Server Error | Range Rover Guys Huntington Beach';
 
 $meta_description = 'Something went wrong on our end. Please try again, or call (714) 465-5488 for Range Rover repair service in Huntington Beach.';
 
+$canonical_path = '/500.php';
+
+$meta_robots = 'noindex, follow';
+
 include ('header.php');
 
 ?>

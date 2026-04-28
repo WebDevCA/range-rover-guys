@@ -6,6 +6,10 @@ $page_title = 'Page Not Found | Range Rover Guys Huntington Beach';
 
 $meta_description = 'The page you were looking for could not be found. Browse our Range Rover repair services or call (714) 465-5488.';
 
+$canonical_path = '/404.php';
+
+$meta_robots = 'noindex, follow';
+
 include ('header.php');
 
 ?>
