@@ -20,7 +20,6 @@ include ('header.php');
 	<li><a href="/">Home</a></li>
 	<li><a href="air-conditioning-service-and-repair.php">Range Rover Air Conditioning Service</a></li>
 	<li><a href="brake-service-and-repair.php">Range Rover Brake Service</a></li>
-	<li><a href="electrical-diagnosis.php">Range Rover Electrical Diagnosis</a></li>
 	<li><a href="sitemap.php">Site Map</a></li>
 </ul>
 
