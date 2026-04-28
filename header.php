@@ -75,7 +75,7 @@ $og_url         = ($canonical_path === '/') ? 'https://rangeroverguys.com/' : $c
 
 		<div id="wrapper">
 
-			<header><a href="tel:+17144655488" border="0"><img src="images/banner.png" width="968" height="281" fetchpriority="high" alt="Range Rover Guys - Independent Range Rover Repair, Huntington Beach" /></a></header>
+			<header><a href="tel:+17144655488" aria-label="Call Range Rover Guys at (714) 465-5488"><img src="images/banner.png" width="968" height="281" fetchpriority="high" alt="Range Rover Guys - Independent Range Rover Repair, Huntington Beach" /></a></header>
 
 			<div id="content">
 
