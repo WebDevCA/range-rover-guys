@@ -1,0 +1,71 @@
+# ============================================================================
+#  rangeroverguys.com — .htaccess
+#  Apache 2.4+ with mod_rewrite, mod_headers, mod_expires, mod_deflate
+# ============================================================================
+
+# ----- 1. Force HTTPS (assuming a valid cert is installed) ------------------
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ----- 2. Canonicalize on the bare domain (no www) --------------------------
+#   Your <link rel="canonical"> uses https://rangeroverguys.com/ (no www),
+#   so 301 the www variant to match. Pick ONE — never both.
+RewriteCond %{HTTP_HOST} ^www\.rangeroverguys\.com$ [NC]
+RewriteRule ^(.*)$ https://rangeroverguys.com/$1 [L,R=301]
+
+# ----- 3. Default index ------------------------------------------------------
+DirectoryIndex index.php index.html
+
+# ----- 4. Pretty URLs for service pages (optional) --------------------------
+#   Lets /brake-service/ resolve to /brake-service-and-repair.php
+#   Add one RewriteRule per service page you want to clean up.
+#
+# RewriteRule ^air-conditioning/?$         air-conditioning-service-and-repair.php [L]
+# RewriteRule ^brake-service/?$            brake-service-and-repair.php           [L]
+# RewriteRule ^electrical-diagnosis/?$     electrical-diagnosis.php                [L]
+
+# ----- 5. Block access to sensitive files -----------------------------------
+<FilesMatch "^(\.htaccess|\.htpasswd|\.git.*|composer\.(json|lock)|package(-lock)?\.json|.*\.sql|.*\.bak|.*\.swp|\.env)$">
+    Require all denied
+</FilesMatch>
+
+# ----- 6. Security headers ---------------------------------------------------
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+    # HSTS: enable ONLY after you've verified HTTPS works site-wide for >=1 week.
+    # Once a browser sees this header it will refuse HTTP for a year — hard to undo.
+    # Header set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+</IfModule>
+
+# ----- 7. Gzip compression --------------------------------------------------
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript
+    AddOutputFilterByType DEFLATE application/javascript application/json application/xml
+    AddOutputFilterByType DEFLATE image/svg+xml application/rss+xml
+</IfModule>
+
+# ----- 8. Browser caching ---------------------------------------------------
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault                              "access plus 1 month"
+    ExpiresByType text/html                     "access plus 0 seconds"
+    ExpiresByType text/css                      "access plus 1 year"
+    ExpiresByType application/javascript        "access plus 1 year"
+    ExpiresByType image/jpeg                    "access plus 1 year"
+    ExpiresByType image/png                     "access plus 1 year"
+    ExpiresByType image/svg+xml                 "access plus 1 year"
+    ExpiresByType image/webp                    "access plus 1 year"
+    ExpiresByType image/x-icon                  "access plus 1 year"
+    ExpiresByType font/woff2                    "access plus 1 year"
+</IfModule>
+
+# ----- 9. Custom error pages (create the files) -----------------------------
+ErrorDocument 404 /404.php
+ErrorDocument 500 /500.php
+
+# ----- 10. UTF-8 by default --------------------------------------------------
+AddDefaultCharset UTF-8
