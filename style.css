@@ -118,11 +118,25 @@ HEADER
 	line-height: 0;
 }
 
+HEADER A
+{
+	display: block;
+	text-decoration: none;
+	outline: none;
+}
+
+HEADER A:focus-visible
+{
+	outline: 3px solid #FC7A1A;
+	outline-offset: -3px;
+}
+
 HEADER IMG
 {
 	display: block;
 	width: 100%;
 	height: auto;
+	border: 0;
 }
 
 #content
