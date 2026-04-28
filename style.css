@@ -17,6 +17,12 @@ BODY
 	color: #000000;
 }
 
+IMG
+{
+	max-width: 100%;
+	height: auto;
+}
+
 EM
 {
 	font-style: italic;
@@ -48,7 +54,10 @@ P:first-of-type:first-line
 .icons
 {
 	float: right;
+	max-width: 217px;
+	height: auto;
 	margin-left: 11px;
+	margin-bottom: 11px;
 }
 
 HR
@@ -64,8 +73,9 @@ HR
 ADDRESS
 {
 	font-size: 1.4em;
-	line-height: 1.4em;
+	line-height: 1.6em;
 	margin-bottom: 1em;
+	font-style: normal;
 }
 
 ADDRESS STRONG EM
@@ -93,19 +103,26 @@ ADDRESS ~ P:first-of-type:first-line
 	margin: 11px auto 0px;
 	overflow: auto;
 	position: relative;
-	width: 968px;
+	max-width: 968px;
+	width: 100%;
 	z-index: 100;
 }
 
 HEADER
 {
-	background-image: url(images/banner.png);
 	border-bottom: 1px dotted #6D6D6D;
 	color: #FFFFFF;
 	display: block;
 	position: relative;
-	width: 968px;
-	height: 281px;
+	width: 100%;
+	line-height: 0;
+}
+
+HEADER IMG
+{
+	display: block;
+	width: 100%;
+	height: auto;
 }
 
 #content
@@ -118,8 +135,8 @@ HEADER
 {
 	background-color: #FFFFFF;
 	float: right;
-	padding: 0px 14px 0px 16px;
-	width: 639px;
+	padding: 14px 16px;
+	width: calc(100% - 297px);
 }
 
 #unique H1, #unique H2, #unique H3, #unique H4
@@ -153,9 +170,8 @@ HEADER
 
 #unique P + UL, #unique UL + UL
 {
-	float: left;
-	margin-left: 44px;
-	width: auto;
+	margin-left: 1.5em;
+	margin-bottom: 1em;
 }
 
 #unique UL + P
@@ -168,7 +184,7 @@ HEADER
 	text-decoration: none;
 }
 
-#unique A:link, A:visited
+#unique A:link, #unique A:visited
 {
 	color: #4069B3;
 }
@@ -181,27 +197,39 @@ HEADER
 #blurb
 {
 	 width: 60%;
-	 margin: 0px auto;
+	 margin: 0px auto 1em;
 	 text-align: center;
 	 border: 1px solid black;
 	 border-radius: .7em;
-	 -moz-border-radius: .7em;
-	 margin-bottom: 1em;
 	 padding: .6em;
 	 background-color: #FD0000;
 	 font-size: 1.5em;
 	 line-height: 1.8em;
-	 -o-box-shadow: 10px 10px 5px #888;
-	 -icab-box-shadow: 10px 10px 5px #888;
-	 -khtml-box-shadow: 10px 10px 5px #888;
-	 -moz-box-shadow: 10px 10px 5px #888;
-	 -webkit-box-shadow: 10px 10px 5px #888;
-	 backgrXound: -moz-linear-gradient(left, #FD0000, #D19FAA);
+	 box-shadow: 10px 10px 5px #888;
 }
 
 #unique #blurb A
 {
 	color: #000000;
+}
+
+/* Responsive Google Map embed */
+.map-embed
+{
+	position: relative;
+	width: 100%;
+	aspect-ratio: 638 / 400;
+	margin: 0 0 1em;
+}
+
+.map-embed IFRAME
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
 }
 
 
@@ -213,14 +241,9 @@ NAV
 	color: #FF0000;
 	display: block;
 	float: left;
-	height: 100%;
+	width: 297px;
 	overflow: hidden;
 	padding: 0px;
-}
-
-NAV, NAV UL, NAV > DIV > UL, NAV UL LI
-{
-	width: 297px;
 }
 
 NAV UL
@@ -229,6 +252,7 @@ NAV UL
     margin: 0px;
 	padding: 0px;
 	overflow: hidden;
+	list-style: none;
 }
 
 NAV UL LI
@@ -237,14 +261,14 @@ NAV UL LI
 	font-family: Arial, Helvetica, sans-serif;
 	line-height: 1.5em;
 	list-style-type: none;
-	list-style-position: outside;
 	padding: 0px;
 }
 
-NAV UL LI, NAV UL LI A
+NAV UL LI A
 {
 	display: block;
 	width: 100%;
+	padding: .75em 1em;
 }
 
 NAV LI A:link,
@@ -277,10 +301,117 @@ NAV UL LI A:visited:hover
 	color: #FFFFFF;
 }
 
-UL LI A[href^="http:"]
+UL LI A[href^="http:"], UL LI A[href^="https:"]
 {
 	background: url(images/remote.png) right center no-repeat;
 	padding-right: 17px;
 }
 
 /* End Side Navigation Styles */
+
+
+/* Footer */
+BODY > FOOTER, #wrapper FOOTER
+{
+	display: block;
+}
+
+FOOTER P
+{
+	font-size: 1.2em;
+	color: #FFFFFF;
+	padding: 1em;
+}
+
+
+/* ===========================
+   Mobile / Tablet (<= 768px)
+   =========================== */
+@media (max-width: 768px)
+{
+	#wrapper
+	{
+		margin: 0 auto;
+		border-width: 0;
+	}
+
+	NAV
+	{
+		float: none;
+		width: 100%;
+	}
+
+	NAV UL
+	{
+		display: flex;
+		flex-wrap: wrap;
+		border-bottom: 2px solid #D6D6D6;
+	}
+
+	NAV UL LI
+	{
+		flex: 1 1 50%;
+		border-top: 1px dashed #D6D6D6;
+		text-align: center;
+	}
+
+	NAV UL LI A
+	{
+		padding: 1em .5em;
+		font-size: 1.1em;
+	}
+
+	#unique
+	{
+		float: none;
+		width: 100%;
+		padding: 14px;
+	}
+
+	#unique H1
+	{
+		font-size: 2em;
+	}
+
+	#unique H2
+	{
+		font-size: 1.8em;
+	}
+
+	#unique H3
+	{
+		font-size: 1.6em;
+	}
+
+	P
+	{
+		text-align: left;
+	}
+
+	.icons
+	{
+		float: none;
+		display: block;
+		max-width: 100%;
+		margin: 1em auto;
+	}
+
+	#blurb
+	{
+		width: 90%;
+	}
+}
+
+/* Touch targets on small phones */
+@media (max-width: 480px)
+{
+	NAV UL LI
+	{
+		flex: 1 1 100%;
+	}
+
+	NAV UL LI A
+	{
+		padding: 1.1em .5em;
+	}
+}
