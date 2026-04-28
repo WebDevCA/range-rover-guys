@@ -26,7 +26,7 @@ $og_url         = ($canonical_path === '/') ? 'https://rangeroverguys.com/' : $c
 
 		<meta property="og:description" content="<?= htmlspecialchars($meta_description, ENT_QUOTES, 'UTF-8') ?>" />
 
-		<meta property="og:image" content="https://rangeroverguys.com/images/og-shop.jpg" />
+		<meta property="og:image" content="https://rangeroverguys.com/images/searchRover.jpg" />
 
 		<meta property="og:url" content="<?= htmlspecialchars($og_url, ENT_QUOTES, 'UTF-8') ?>" />
 
@@ -45,7 +45,7 @@ $og_url         = ($canonical_path === '/') ? 'https://rangeroverguys.com/' : $c
 		  "@context": "https://schema.org",
 		  "@type": "AutoRepair",
 		  "name": "Range Rover Guys",
-		  "image": "https://rangeroverguys.com/images/shop.jpg",
+		  "image": "https://rangeroverguys.com/images/searchRover.jpg",
 		  "telephone": "+1-714-465-5488",
 		  "priceRange": "$$",
 		  "address": {
