@@ -1,7 +1,9 @@
 # ============================================================================
-#  rangeroverguys.com — .htaccess
+#  rangeroverguys.com â€” .htaccess
 #  Apache 2.4+ with mod_rewrite, mod_headers, mod_expires, mod_deflate
 # ============================================================================
+
+Options -Indexes
 
 # ----- 1. Force HTTPS (assuming a valid cert is installed) ------------------
 RewriteEngine On
@@ -10,7 +12,7 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # ----- 2. Canonicalize on the bare domain (no www) --------------------------
 #   Your <link rel="canonical"> uses https://rangeroverguys.com/ (no www),
-#   so 301 the www variant to match. Pick ONE — never both.
+#   so 301 the www variant to match. Pick ONEâ€”never both.
 RewriteCond %{HTTP_HOST} ^www\.rangeroverguys\.com$ [NC]
 RewriteRule ^(.*)$ https://rangeroverguys.com/$1 [L,R=301]
 
@@ -37,7 +39,7 @@ DirectoryIndex index.php index.html
     Header set Referrer-Policy "strict-origin-when-cross-origin"
     Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
     # HSTS: enable ONLY after you've verified HTTPS works site-wide for >=1 week.
-    # Once a browser sees this header it will refuse HTTP for a year — hard to undo.
+    # Once a browser sees this header it will refuse HTTP for a year â€” hard to undo.
     # Header set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
 </IfModule>
 
@@ -53,8 +55,8 @@ DirectoryIndex index.php index.html
     ExpiresActive On
     ExpiresDefault                              "access plus 1 month"
     ExpiresByType text/html                     "access plus 0 seconds"
-    ExpiresByType text/css                      "access plus 1 year"
-    ExpiresByType application/javascript        "access plus 1 year"
+    ExpiresByType text/css                      "access plus 1 month"
+    ExpiresByType application/javascript        "access plus 1 month"
     ExpiresByType image/jpeg                    "access plus 1 year"
     ExpiresByType image/png                     "access plus 1 year"
     ExpiresByType image/svg+xml                 "access plus 1 year"
