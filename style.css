@@ -45,6 +45,11 @@ P:first-of-type:first-line
 	text-transform: uppercase;
 }
 
+P + P
+{
+	margin-top: 1em;
+}
+
 #partnerLogos, #partnerLogos IMG
 {
 	width: 217px;
